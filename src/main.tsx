@@ -4,6 +4,6 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <App interMiami={11} bocaJuniors={11} lionelMessi={true} />
   </StrictMode>
 );
