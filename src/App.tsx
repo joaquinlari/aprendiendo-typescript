@@ -7,7 +7,10 @@ const App: React.FC<{
 }> = ({ interMiami, bocaJuniors, lionelMessi }) => {
   const [miamiScore, SetMiamiScore] = useState(interMiami);
 
-  
+  useEffect(() => {
+    if (lionelMessi) {
+      SetMiamiScore((prevScore) => prevScore + 1);
+    }
   }, [lionelMessi]);
   return (
     <>
