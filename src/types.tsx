@@ -10,7 +10,7 @@ console.log(variable); // 123, identifica como number
 variable = true;
 console.log(variable); // "true", identifica como boolean
 
-//Arreglos
+//ARREGLOS
 const arregloNumeros = [1, 2, 3, 4, 5];
 console.log(arregloNumeros);
 const arregloTexto = ["HTML", "CSS", "JAVASCRIPT"];
@@ -24,3 +24,22 @@ console.log(arregloNumeros2);
 const arregloTexto1: string[] = ["HTML", "CSS", "JAVASCRIPT"];
 arregloTexto1[0].indexOf("HTML");
 console.log(arregloTexto1);
+
+//OBJETOS
+let programador = {
+  nombre: "Joaquín Lari",
+  tecnologias: ["React", "CSS", "Angular"],
+  tomaMate: true,
+};
+
+/* programador = {
+  nombre: "Lari Joaquin",
+  tecnologias: ["C#"],
+  tomaMate: "SI",  esta linea estaria mal ya que al principio 'tomaMate' se definió como booleano solo.
+}; */
+
+let programador2 = {
+  nombre: "Lari Joaquin",
+  tecnologias: ["C#"],
+  tomaMate: "si",
+};
