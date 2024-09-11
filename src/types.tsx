@@ -20,5 +20,7 @@ console.log(arreglo2);
 
 const arreglo3: number[] = [1, 2, 3, 4, 5];
 console.log(arreglo3);
+
 const arreglo4: string[] = ["HTML", "CSS", "JAVASCRIPT"];
+arreglo4[0].indexOf("HTML");
 console.log(arreglo4);
