@@ -11,16 +11,16 @@ variable = true;
 console.log(variable); // "true", identifica como boolean
 
 //Arreglos
-const arreglo1 = [1, 2, 3, 4, 5];
-console.log(arreglo1);
-const arreglo2 = ["HTML", "CSS", "JAVASCRIPT"];
-console.log(arreglo2);
+const arregloNumeros = [1, 2, 3, 4, 5];
+console.log(arregloNumeros);
+const arregloTexto = ["HTML", "CSS", "JAVASCRIPT"];
+console.log(arregloTexto);
 
 // arreglo1.push("REACT"); esto no funcionaría ya que ts detecta arreglo1 como tipo number
 
-const arreglo3: number[] = [1, 2, 3, 4, 5];
-console.log(arreglo3);
+const arregloNumeros2: number[] = [1, 2, 3, 4, 5];
+console.log(arregloNumeros2);
 
-const arreglo4: string[] = ["HTML", "CSS", "JAVASCRIPT"];
-arreglo4[0].indexOf("HTML");
-console.log(arreglo4);
+const arregloTexto1: string[] = ["HTML", "CSS", "JAVASCRIPT"];
+arregloTexto1[0].indexOf("HTML");
+console.log(arregloTexto1);
