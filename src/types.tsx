@@ -30,6 +30,7 @@ const programador = {
   tecnologias: ["React", "CSS", "Angular"],
   tomaMate: true,
 };
+console.log(programador);
 
 /* programador = {
   nombre: "Lari Joaquin",
@@ -42,3 +43,5 @@ const programador2 = {
   tecnologias: ["C#"],
   tomaMate: "si",
 };
+
+console.log(programador2);
