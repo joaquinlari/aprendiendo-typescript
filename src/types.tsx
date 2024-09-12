@@ -44,12 +44,6 @@ console.log(programador);
   tomaMate: "SI",  esta linea estaria mal ya que al principio 'tomaMate' se definió como booleano solo.
 }; */
 
-type Programador2 = {
-  nombre: string;
-  tecnologias: string[];
-  tomaMate: string;
-};
-
 const programador2: Programador2 = {
   nombre: "Lari Joaquin",
   tecnologias: ["C#"],
