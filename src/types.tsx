@@ -25,6 +25,12 @@ const arregloTexto1: string[] = ["HTML", "CSS", "JAVASCRIPT"];
 arregloTexto1[0].indexOf("HTML");
 console.log(arregloTexto1);
 
+type Programador = {
+  nombre: string;
+  tecnologias: string[];
+  tomaMate: boolean;
+};
+
 const programador = {
   nombre: "Joaquín Lari",
   tecnologias: ["React", "CSS", "Angular"],
