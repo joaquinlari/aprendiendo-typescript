@@ -31,7 +31,7 @@ type Programador = {
   tomaMate: boolean;
 };
 
-const programador = {
+const programador: Programador = {
   nombre: "Joaquín Lari",
   tecnologias: ["React", "CSS", "Angular"],
   tomaMate: true,
@@ -44,7 +44,13 @@ console.log(programador);
   tomaMate: "SI",  esta linea estaria mal ya que al principio 'tomaMate' se definió como booleano solo.
 }; */
 
-const programador2 = {
+type Programador2 = {
+  nombre: string;
+  tecnologias: string[];
+  tomaMate: string;
+};
+
+const programador2: Programador2 = {
   nombre: "Lari Joaquin",
   tecnologias: ["C#"],
   tomaMate: "si",
