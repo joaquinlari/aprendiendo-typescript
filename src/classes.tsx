@@ -1,5 +1,5 @@
 class Peliculas {
-  nombre: string = "Attack On Titan";
+  nombre?: string;
   protagonistas?: string[];
   actores?: string[];
 
@@ -14,6 +14,10 @@ class Peliculas {
   }
 }
 
-const pelicula = new Peliculas();
+const pelicula = new Peliculas(
+  "Attack on Titan",
+  ["Eren Jaeger", "Mikasa Ackerman"],
+  ["Yūki Kaji", "	Kiko Mizuhara"]
+);
 
-pelicula.proyectarEnCine();
+console.log(pelicula);
