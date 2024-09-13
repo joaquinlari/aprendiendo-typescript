@@ -1,5 +1,5 @@
 class Peliculas {
-  nombre?: string;
+  nombre: string = "Attack On Titan";
   protagonistas?: string[];
   actores?: string[];
 
