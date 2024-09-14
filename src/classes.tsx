@@ -7,6 +7,7 @@ class Peliculas {
     console.log(`La pelicula es ${this.nombre}`);
   }
 
+  //sirve para inicializar en caso de que no reciba ningun contenido
   constructor(nombre: string, protagonistas: string[], actores: string[]) {
     this.nombre = nombre;
     this.protagonistas = protagonistas;
