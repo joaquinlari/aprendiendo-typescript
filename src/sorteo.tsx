@@ -10,4 +10,8 @@ class Sorteo<T> {
   getNumero() {
     return this.numero;
   }
+
+  public sortear(): string {
+    return `Para ${this.numero}`;
+  }
 }
