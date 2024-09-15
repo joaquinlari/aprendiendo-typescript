@@ -6,4 +6,8 @@ class Sorteo {
   setNumero(numero: T) {
     this.numero = numero;
   }
+
+  getNumero() {
+    return this.numero;
+  }
 }
