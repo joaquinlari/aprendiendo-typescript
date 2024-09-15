@@ -1,4 +1,4 @@
-class Sorteo {
+class Sorteo<T> {
   private numero?: T;
 
   constructor(nombre: string) {}
