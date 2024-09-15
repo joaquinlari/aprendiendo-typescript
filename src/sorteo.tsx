@@ -1,18 +1,19 @@
 class Sorteo<T> {
-  private numero?: T; // private es que no se puede acceder desde afuera, solo puede manejarse en la clase
+  private ticket?: T; // private es que no se puede acceder desde afuera, solo puede manejarse en la clase
 
   constructor(private nombre: string) {}
 
-  setNumero(numero: T) {
-    this.numero = numero;
+  setticket(ticket: T) {
+    this.ticket = ticket;
   }
 
-  getNumero() {
-    return this.numero;
+  getticket() {
+    return this.ticket;
   }
 
   public sortear(): string {
     //public se puede acceder desde afuera
-    return `Para ${this.numero}`;
+
+    return `Para ${this.ticket}`;
   }
 }
