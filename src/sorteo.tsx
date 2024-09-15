@@ -1,7 +1,7 @@
 class Sorteo<T> {
   private numero?: T;
 
-  constructor(nombre: string) {}
+  constructor(private nombre: string) {}
 
   setNumero(numero: T) {
     this.numero = numero;
