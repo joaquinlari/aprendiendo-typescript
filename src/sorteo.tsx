@@ -3,7 +3,7 @@ class Sorteo<T> {
 
   constructor(private nombre: string) {}
 
-  setticket(ticket: T) {
+  setticket(ticket: T) {|
     this.ticket = ticket;
   }
 
@@ -14,6 +14,6 @@ class Sorteo<T> {
   public sortear(): string {
     //public se puede acceder desde afuera
 
-    return `Para ${this.ticket}`;
+    return `Para ${this.ticket} el ticket es ${this.ticket}`;
   }
 }
