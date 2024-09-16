@@ -4,7 +4,7 @@ class Sorteo<T> {
 
   constructor(private nombre: string) {}
 
-  setticket(ticket: T) {|
+  setticket(ticket: T) {
     this.ticket = ticket;
   }
 
