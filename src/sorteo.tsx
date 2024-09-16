@@ -20,3 +20,5 @@ class Sorteo<T> {
 }
 
 let sorteo = new Sorteo<number>("Joaquin Lari");
+sorteo.setTicket(7);
+console.log(sorteo.sortear());
