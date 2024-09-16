@@ -4,11 +4,11 @@ class Sorteo<T> {
 
   constructor(private nombre: string) {}
 
-  setticket(ticket: T) {
+  setTicket(ticket: T) {
     this.ticket = ticket;
   }
 
-  getticket() {
+  getTicket() {
     return this.ticket;
   }
 
@@ -19,6 +19,6 @@ class Sorteo<T> {
   }
 }
 
-let sorteo = new Sorteo<string>("Joaquin Lari");
+const sorteo = new Sorteo<number>("Joaquin Lari");
 sorteo.setTicket(7);
 console.log(sorteo.sortear());
