@@ -18,3 +18,5 @@ class Sorteo<T> {
     return `Para ${this.ticket} el ticket es ${this.ticket}`;
   }
 }
+
+let sorteo = new Sorteo<number>("Joaquin Lari");
