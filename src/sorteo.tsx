@@ -15,10 +15,10 @@ class Sorteo<T> {
   public sortear(): string {
     //public se puede acceder desde afuera
 
-    return `Para ${this.ticket} el ticket es ${this.ticket}`;
+    return `Para ${this.nombre} el ticket es ${this.ticket}`;
   }
 }
 
-let sorteo = new Sorteo<number>("Joaquin Lari");
+let sorteo = new Sorteo<string>("Joaquin Lari");
 sorteo.setTicket(7);
 console.log(sorteo.sortear());
