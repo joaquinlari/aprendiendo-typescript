@@ -1,9 +1,3 @@
-import React from "react";
-
-type Props = {};
-
-const TodoApp = (props: Props) => {
+export const TodoApp = () => {
   return <div>TodoApp</div>;
 };
-
-export default TodoApp;
