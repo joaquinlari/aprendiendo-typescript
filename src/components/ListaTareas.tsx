@@ -1,7 +1,8 @@
-import React from "react";
+type Props = {
+  listaTareas: string[];
+  borrarTarea: (index: number) => void;
+};
 
-type Props = {};
-
-const ListaTareas = (props: Props) => {
+const ListaTareas = ({ listaTareas, borrarTarea }: Props) => {
   return <div>ListaTareas</div>;
 };
