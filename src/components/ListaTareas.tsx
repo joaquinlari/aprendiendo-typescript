@@ -4,5 +4,11 @@ type Props = {
 };
 
 export const ListaTareas = ({ listaTareas, borrarTarea }: Props) => {
-  return <div>ListaTareas</div>;
+  return (
+    <div className="task-list">
+      {listaTareas.map((task, index) => {
+        return <li key={index}>asd</li>;
+      })}
+    </div>
+  );
 };
