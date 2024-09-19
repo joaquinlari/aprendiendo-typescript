@@ -3,6 +3,6 @@ type Props = {
   borrarTarea: (index: number) => void;
 };
 
-const ListaTareas = ({ listaTareas, borrarTarea }: Props) => {
+export const ListaTareas = ({ listaTareas, borrarTarea }: Props) => {
   return <div>ListaTareas</div>;
 };

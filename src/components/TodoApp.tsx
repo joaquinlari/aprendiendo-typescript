@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {ListaTareas} from './ListaTareas'
 
 export const TodoApp = () => {
   const [newTarea, setNewTarea] = useState<string>("");
@@ -18,6 +19,7 @@ export const TodoApp = () => {
         placeholder="Escriba una nueva tarea"
       />
       <button onClick={handleAddTask}></button>
+      <ListaTareas listaTareas={} borrarTarea={}/>
     </div>
   );
 };
