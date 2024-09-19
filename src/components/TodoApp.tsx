@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 export const TodoApp = () => {
-  const [newTarea, setNewTarea] = useState("");
+  const [newTarea, setNewTarea] = useState<string>("");
+  const [listaTareas, setListaTareas] = useState<string[]>([])
 
   const handleAddTask = () = {
     
