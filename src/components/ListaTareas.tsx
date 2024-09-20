@@ -1,9 +1,9 @@
-type Props = {
+type ListaTareas = {
   listaTareas: string[];
   borrarTarea: (index: number) => void;
 };
 
-export const ListaTareas = ({ listaTareas, borrarTarea }: Props) => {
+export const ListaTareas = ({ listaTareas, borrarTarea }: ListaTareas) => {
   return (
     <div className="task-list">
       {listaTareas.map((task, index) => {
