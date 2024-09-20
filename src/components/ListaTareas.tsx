@@ -1,3 +1,5 @@
+import { Tarea } from "./Tarea";
+
 type ListaTareas = {
   listaTareas: string[];
   borrarTarea: (index: number) => void;
@@ -6,8 +8,10 @@ type ListaTareas = {
 export const ListaTareas = ({ listaTareas, borrarTarea }: ListaTareas) => {
   return (
     <div className="task-list">
-      {listaTareas.map((task, index) => {
-        return <li key={index}>asd</li>;
+      {listaTareas.map((tarea, index) => {
+        return (
+          <Tarea key={index} tarea={tarea} borrarTarea={() => borrarTarea} />
+        );
       })}
     </div>
   );
