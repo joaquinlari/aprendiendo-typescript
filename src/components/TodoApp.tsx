@@ -11,7 +11,11 @@ export const TodoApp = () => {
     setNuevaTarea("");
   };
 
-  const handleBorrarTarea = (index: number) => {};
+  const handleBorrarTarea = (index: number) => {
+    setListaTareas((tareasActuales) =>
+      tareasActuales.filter((_, i) => i !== index)
+    );
+  };
   return (
     <div>
       <h1>Lista de Tareas</h1>
