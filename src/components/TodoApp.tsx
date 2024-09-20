@@ -9,6 +9,9 @@ export const TodoApp = () => {
     
   }
 
+  const handleBorrarTarea = (index:number) => {
+
+  }
   return (
     <div>
       <h1>Lista de Tareas</h1>
@@ -19,7 +22,7 @@ export const TodoApp = () => {
         placeholder="Escriba una nueva tarea"
       />
       <button onClick={handleAddTask}></button>
-      <ListaTareas listaTareas={} borrarTarea={}/>
+      <ListaTareas listaTareas={listaTareas} borrarTarea={handleBorrarTarea}/>
     </div>
   );
 };
