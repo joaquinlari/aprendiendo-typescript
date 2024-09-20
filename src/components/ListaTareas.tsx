@@ -10,7 +10,11 @@ export const ListaTareas = ({ listaTareas, borrarTarea }: ListaTareas) => {
     <div className="task-list">
       {listaTareas.map((tarea, index) => {
         return (
-          <Tarea key={index} tarea={tarea} borrarTarea={() => borrarTarea} />
+          <Tarea
+            key={index}
+            tarea={tarea}
+            borrarTarea={() => borrarTarea(index)}
+          />
         );
       })}
     </div>

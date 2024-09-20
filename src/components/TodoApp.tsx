@@ -19,13 +19,15 @@ export const TodoApp = () => {
   return (
     <div>
       <h1>Lista de Tareas</h1>
-      <input
-        type="text"
-        value={nuevaTarea}
-        onChange={(e) => setNuevaTarea(e.target.value)}
-        placeholder="Escriba una nueva tarea"
-      />
-      <button onClick={handleAddTask}>Agregar Tarea</button>
+      <div className="flex">
+        <input
+          type="text"
+          value={nuevaTarea}
+          onChange={(e) => setNuevaTarea(e.target.value)}
+          placeholder="Escriba una nueva tarea"
+        />
+        <button onClick={handleAddTask}>Agregar Tarea</button>
+      </div>
       <ListaTareas listaTareas={listaTareas} borrarTarea={handleBorrarTarea} />
     </div>
   );
