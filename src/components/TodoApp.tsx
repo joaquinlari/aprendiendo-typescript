@@ -3,16 +3,16 @@ import { ListaTareas } from "./ListaTareas";
 
 export const TodoApp = () => {
   const [newTask, setNewTask] = useState<string>("");
-  const [listaTareas, setListaTareas] = useState<string[]>([]);
+  const [listaTareas, setTasksList] = useState<string[]>([]);
 
   const handleAddTask = () => {
     if (newTask.trim() === "") return;
-    setListaTareas((tareasAnteriores) => [...tareasAnteriores, newTask]);
+    setTasksList((tareasAnteriores) => [...tareasAnteriores, newTask]);
     setNewTask("");
   };
 
   const handleBorrarTarea = (index: number) => {
-    setListaTareas((tareasActuales) =>
+    setTasksList((tareasActuales) =>
       tareasActuales.filter((_, i) => i !== index)
     );
   };
