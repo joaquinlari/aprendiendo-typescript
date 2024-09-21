@@ -1,14 +1,14 @@
 import { Tarea } from "./Tarea";
 
-type ListaTareas = {
-  listaTareas: string[];
+type TasksList = {
+  tasksList: string[];
   borrarTarea: (index: number) => void;
 };
 
-export const ListaTareas = ({ listaTareas, borrarTarea }: ListaTareas) => {
+export const TasksList = ({ tasksList, borrarTarea }: TasksList) => {
   return (
     <div className="task-list">
-      {listaTareas.map((tarea, index) => {
+      {tasksList.map((tarea, index) => {
         return (
           <Tarea
             key={index}

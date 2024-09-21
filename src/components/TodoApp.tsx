@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { ListaTareas } from "./ListaTareas";
+import { TasksList } from "./TasksList";
 
 export const TodoApp = () => {
   const [newTask, setNewTask] = useState<string>("");
-  const [listaTareas, setTasksList] = useState<string[]>([]);
+  const [tasksList, setTasksList] = useState<string[]>([]);
 
   const handleAddTask = () => {
     if (newTask.trim() === "") return;
@@ -16,6 +16,7 @@ export const TodoApp = () => {
       tareasActuales.filter((_, i) => i !== index)
     );
   };
+
   return (
     <div>
       <h1>Lista de Tareas</h1>
@@ -28,7 +29,7 @@ export const TodoApp = () => {
         />
         <button onClick={handleAddTask}>Agregar Tarea</button>
       </div>
-      <ListaTareas listaTareas={listaTareas} borrarTarea={handleBorrarTarea} />
+      <TasksList tasksList={tasksList} borrarTarea={handleBorrarTarea} />
     </div>
   );
 };
