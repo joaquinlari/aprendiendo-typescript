@@ -7,14 +7,12 @@ export const TodoApp = () => {
 
   const handleAddTask = () => {
     if (newTask.trim() === "") return;
-    setTasksList((tareasAnteriores) => [...tareasAnteriores, newTask]);
+    setTasksList((previousTasks) => [...previousTasks, newTask]);
     setNewTask("");
   };
 
-  const handleBorrarTarea = (index: number) => {
-    setTasksList((tareasActuales) =>
-      tareasActuales.filter((_, i) => i !== index)
-    );
+  const handleDeleteTask = (index: number) => {
+    setTasksList((currentTasks) => currentTasks.filter((_, i) => i !== index));
   };
 
   return (
@@ -29,7 +27,7 @@ export const TodoApp = () => {
         />
         <button onClick={handleAddTask}>Agregar Tarea</button>
       </div>
-      <TasksList tasksList={tasksList} borrarTarea={handleBorrarTarea} />
+      <TasksList tasksList={tasksList} deleteTask={handleDeleteTask} />
     </div>
   );
 };
