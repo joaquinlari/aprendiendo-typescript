@@ -1,4 +1,4 @@
-import { Tarea } from "./Tarea";
+import { Task } from "./Task";
 
 type TasksList = {
   tasksList: string[];
@@ -8,13 +8,9 @@ type TasksList = {
 export const TasksList = ({ tasksList, deleteTask }: TasksList) => {
   return (
     <div className="task-list">
-      {tasksList.map((tarea, index) => {
+      {tasksList.map((task, index) => {
         return (
-          <Tarea
-            key={index}
-            tarea={tarea}
-            deleteTask={() => deleteTask(index)}
-          />
+          <Task key={index} task={task} deleteTask={() => deleteTask(index)} />
         );
       })}
     </div>
