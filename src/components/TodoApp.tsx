@@ -2,12 +2,12 @@ import { useState } from "react";
 import { ListaTareas } from "./ListaTareas";
 
 export const TodoApp = () => {
-  const [nuevaTarea, setNewTask] = useState<string>("");
+  const [newTask, setNewTask] = useState<string>("");
   const [listaTareas, setListaTareas] = useState<string[]>([]);
 
   const handleAddTask = () => {
-    if (nuevaTarea.trim() === "") return;
-    setListaTareas((tareasAnteriores) => [...tareasAnteriores, nuevaTarea]);
+    if (newTask.trim() === "") return;
+    setListaTareas((tareasAnteriores) => [...tareasAnteriores, newTask]);
     setNewTask("");
   };
 
@@ -22,7 +22,7 @@ export const TodoApp = () => {
       <div className="flex">
         <input
           type="text"
-          value={nuevaTarea}
+          value={newTask}
           onChange={(e) => setNewTask(e.target.value)}
           placeholder="Escriba una nueva tarea"
         />
