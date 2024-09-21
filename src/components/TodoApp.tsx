@@ -2,13 +2,13 @@ import { useState } from "react";
 import { ListaTareas } from "./ListaTareas";
 
 export const TodoApp = () => {
-  const [nuevaTarea, setNuevaTarea] = useState<string>("");
+  const [nuevaTarea, setNewTask] = useState<string>("");
   const [listaTareas, setListaTareas] = useState<string[]>([]);
 
   const handleAddTask = () => {
     if (nuevaTarea.trim() === "") return;
     setListaTareas((tareasAnteriores) => [...tareasAnteriores, nuevaTarea]);
-    setNuevaTarea("");
+    setNewTask("");
   };
 
   const handleBorrarTarea = (index: number) => {
@@ -23,7 +23,7 @@ export const TodoApp = () => {
         <input
           type="text"
           value={nuevaTarea}
-          onChange={(e) => setNuevaTarea(e.target.value)}
+          onChange={(e) => setNewTask(e.target.value)}
           placeholder="Escriba una nueva tarea"
         />
         <button onClick={handleAddTask}>Agregar Tarea</button>
